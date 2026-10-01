@@ -1,0 +1,29 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": false,
+		"layout": {
+			"contentSize": "1320px",
+			"wideSize": "100% "
+		},
+		"color": {
+			"custom": false,
+			"palette": []
+		},
+		"typography": {
+			"customFontSize": false,
+			"fontSizes": []
+		},
+		"spacing": {
+			"blockGap": false,
+			"padding": false,
+			"margin": false,
+			"units": []
+		}
+	},
+	"templateParts": [
+		{ "area": "header", "name": "header" },
+		{ "area": "footer", "name": "footer" }
+	]
+}

@@ -1,0 +1,138 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "smp-blocks/image-text-4",
+  "version": "1.0.0",
+  "title": "Image & Text 4",
+  "category": "smp-image-text",
+  "icon": "align-pull-left",
+  "description": "A layout with a large full-width image on top, and a split content section below with heading and two description paragraphs.",
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "align": [
+      "full"
+    ],
+    "layout": false
+  },
+  "attributes": {
+    "paddingOptions": {
+      "type": "array",
+      "default": []
+    },
+    "bgClass": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": "https://images.pexels.com/photos/7709187/pexels-photo-7709187.jpeg"
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "imageSize": {
+      "type": "string",
+      "default": "full"
+    },
+    "aspectRatio": {
+      "type": "string",
+      "default": "none"
+    },
+    "objectPosition": {
+      "type": "string",
+      "default": "center center"
+    },
+    "lazyLoad": {
+      "type": "boolean",
+      "default": true
+    },
+    "imageSizes": {
+      "type": "object",
+      "default": {}
+    },
+    "overflowHidden": {
+      "type": "boolean",
+      "default": false
+    },
+    "showSubHeading": {
+      "type": "boolean",
+      "default": true
+    },
+    "subHeading": {
+      "type": "string",
+      "default": "Growth Focused Solutions"
+    },
+    "showHeading": {
+      "type": "boolean",
+      "default": true
+    },
+    "headingTag": {
+      "type": "string",
+      "default": "h2"
+    },
+    "heading": {
+      "type": "string",
+      "default": "Build a stronger digital presence that drives real results."
+    },
+    "showDescription": {
+      "type": "boolean",
+      "default": true
+    },
+    "description": {
+      "type": "string",
+      "default": "We blend strategy, design, and performance marketing to help businesses attract better leads, earn trust faster, and grow with confidence."
+    },
+    "showDescription2": {
+      "type": "boolean",
+      "default": true
+    },
+    "description2": {
+      "type": "string",
+      "default": "From modern websites and brand messaging to conversion-focused campaigns, every solution is built around measurable progress. Our team focuses on clear execution, long-term value, and helping you stand out in competitive markets."
+    },
+    "showButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Get Started"
+    },
+    "buttonUrl": {
+      "type": "string"
+    },
+    "buttonTarget": {
+      "type": "string"
+    },
+    "buttonStyle": {
+      "type": "string",
+      "default": "primary"
+    },
+    "showButton2": {
+      "type": "boolean",
+      "default": true
+    },
+    "buttonText2": {
+      "type": "string",
+      "default": "Learn More"
+    },
+    "buttonUrl2": {
+      "type": "string"
+    },
+    "buttonTarget2": {
+      "type": "string"
+    },
+    "buttonStyle2": {
+      "type": "string",
+      "default": "dark-outline"
+    }
+  },
+  "textdomain": "smp-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

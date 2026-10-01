@@ -1,0 +1,55 @@
+/* Auto-generated — do not edit manually. Last updated: 2026-09-26 06:33:07 */
+
+:root {
+	--kf-body-bg: #FFFFFF;
+	--kf-body-text: #1C1D25;
+	--kf-white: #FFFFFF;
+	--kf-black: #1C1D25;
+	--kf-container-width: 1600px;
+	--kf-btn-primary-bg: #ff2056;
+	--kf-btn-primary-bg-hover: #e61c4d;
+	--kf-btn-secondary-bg: #fe9a00;
+	--kf-btn-secondary-bg-hover: #e58b00;
+	--kf-btn-light-bg: #f8f9fa;
+	--kf-btn-light-bg-hover: #f3f4f6;
+	--kf-btn-dark-bg: #111827;
+	--kf-btn-dark-bg-hover: #1f2937;
+	--kf-heading-font: 'Bricolage Grotesque';
+	--kf-heading-font-secondary: Cormorant;
+	--kf-body-font: 'DM Sans';
+	--kf-heading-margin-bottom: 24px;
+	--kf-paragraph-margin-bottom: 24px;
+	--kf-transition: all 0.3s ease-out;
+	--kf-box-shadow: 5px 5px 5px 1px #dddddd;
+	--kf-box-shadow-sm: 5px 5px 5px 1px #dddddd;
+	--kf-box-shadow-lg: 5px 5px 5px 1px #dddddd;
+
+	/* === Brand Colors === */
+	--kf-brand-color-1: #ff2056;
+	--kf-brand-color-2: #ff2056;
+
+	/* === Background Colors === */
+	--kf-bg-light-1: #fff1f5;
+	--kf-bg-light-1-text: #1c1d25;
+	--kf-bg-light-2: #fff6e8;
+	--kf-bg-light-2-text: #1c1d25;
+	--kf-bg-light-3: #f5f7f9;
+	--kf-bg-light-3-text: #1c1d25;
+	--kf-bg-dark-1: #111827;
+	--kf-bg-dark-1-text: #ffffff;
+	--kf-bg-dark-2: #1f2937;
+	--kf-bg-dark-2-text: #ffffff;
+	--kf-bg-brand-1-1: #eeee22;
+	--kf-bg-brand-1-1-text: #1c1d25;
+
+	/* === Gradient Backgrounds === */
+	--kf-gradient-1-start: #ff2056;
+	--kf-gradient-1-end: #fe9a00;
+	--kf-gradient-2-start: #ff2056;
+	--kf-gradient-2-end: #fe9a00;
+
+	--kf-bg-gradient-1: linear-gradient(135deg, var(--kf-gradient-1-start), var(--kf-gradient-1-end));
+	--kf-bg-gradient-2: linear-gradient(135deg, var(--kf-gradient-2-start), var(--kf-gradient-2-end));
+}
+
+.kf-bg-brand-1-1 { background: var(--kf-bg-brand-1-1) !important; }

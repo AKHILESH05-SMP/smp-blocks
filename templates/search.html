@@ -1,0 +1,43 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<main class="wp-block-group container my-5">
+    
+    <!-- Search Results Header -->
+    <header class="search-header mb-5 py-5 border-bottom">
+        <!-- wp:query-title {"type":"search","level":1,"className":"display-5"} /-->
+        
+        <!-- wp:search {"label":"Search again","showLabel":false,"placeholder":"Search...","width":50,"widthUnit":"%","buttonText":"Search","buttonUseIcon":true,"className":"mt-4"} /-->
+    </header>
+
+    <!-- wp:query {"layout":{"inherit":true}} -->
+    <div class="wp-block-query">
+        <!-- wp:post-template {"layout":{"type":"grid","columnCount":2}} -->
+            <div class="row mb-5 align-items-center">
+                <!-- wp:post-featured-image {"isLink":true,"className":"col-md-4 mb-3 mb-md-0"} /-->
+                <div class="col-md-8">
+                    <!-- wp:post-title {"isLink":true,"style":{"typography":{"fontSize":"1.75rem"}}} /-->
+                    <!-- wp:post-date {"className":"text-muted small"} /-->
+                    <!-- wp:post-excerpt {"excerptLength":30} /-->
+                </div>
+            </div>
+        <!-- /wp:post-template -->
+
+        <!-- No Results Found -->
+        <!-- wp:query-no-results -->
+            <!-- wp:paragraph -->
+            <p class="alert alert-warning">Afsos! Aapke search se milta-julta kuch nahi mila. Dubara koshish karein.</p>
+            <!-- /wp:paragraph -->
+        <!-- /wp:query-no-results -->
+
+        <!-- Pagination -->
+        <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+            <!-- wp:query-pagination-previous /-->
+            <!-- wp:query-pagination-numbers /-->
+            <!-- wp:query-pagination-next /-->
+        <!-- /wp:query-pagination -->
+    </div>
+    <!-- /wp:query -->
+
+</main>
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

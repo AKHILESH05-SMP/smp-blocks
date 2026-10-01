@@ -1,0 +1,70 @@
+.text-image-04-content-left h2 {
+  margin: 0;
+}
+
+.text-image-04-text {
+  padding-right: 40px;
+}
+
+.text-image-04-media {
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 40%;
+  margin-bottom: 80px;
+}
+
+.text-image-04-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================================================= */
+/* XXL DEVICES                                                   */
+/* Large desktops / wide monitors / screens below 1400px         */
+/* ============================================================= */
+@media (max-width: 1399.98px) {
+}
+
+/* ============================================================= */
+/* XL DEVICES                                                    */
+/* Standard desktops / laptops / screens below 1200px           */
+/* ============================================================= */
+@media (max-width: 1199.98px) {
+}
+
+/* ============================================================= */
+/* LG DEVICES                                                    */
+/* Tablets / landscape tablets / small laptops below 992px      */
+/* ============================================================= */
+@media (max-width: 991.98px) {
+  .text-image-04-media {
+    padding-bottom: 50%;
+    margin-bottom: 60px;
+  }
+
+  .text-image-04-text {
+    padding-right: 0;
+  }
+}
+
+/* ============================================================= */
+/* MD DEVICES                                                    */
+/* Landscape phones / large mobiles / screens below 768px       */
+/* ============================================================= */
+@media (max-width: 767.98px) {
+  .text-image-04-media {
+    padding-bottom: 60%;
+    margin-bottom: 40px;
+  }
+}
+
+/* ============================================================= */
+/* SM DEVICES                                                    */
+/* Portrait phones / extra small screens below 576px            */
+/* ============================================================= */
+@media (max-width: 575.98px) {
+}

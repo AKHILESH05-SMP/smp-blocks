@@ -1,0 +1,199 @@
+/* ===================================================================
+   MOTIONFLOW CSS v1.0.0
+   Lightweight scroll + parallax animation library
+   https://motionflow.dev
+=================================================================== */
+
+/* --------------------------------------------
+   Base State (before animation)
+-------------------------------------------- */
+[data-mf] {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+  }
+  
+  /* --------------------------------------------
+     Animated State
+  -------------------------------------------- */
+  .mf-animate {
+    opacity: 1;
+    transform: none !important;
+  }
+  
+  /* ===================================================================
+     FADE ANIMATIONS (Animate.css Inspired)
+  =================================================================== */
+  
+  /* Fade In */
+  [data-mf="fade-in"]:not(.mf-animate) { opacity: 0; }
+  
+  /* Fade Up */
+  [data-mf="fade-up"]:not(.mf-animate) { transform: translateY(40px); }
+  
+  /* Fade Down */
+  [data-mf="fade-down"]:not(.mf-animate) { transform: translateY(-40px); }
+  
+  /* Fade Left */
+  [data-mf="fade-left"]:not(.mf-animate) { transform: translateX(-40px); }
+  
+  /* Fade Right */
+  [data-mf="fade-right"]:not(.mf-animate) { transform: translateX(40px); }
+  
+  /* Fade In Zoom */
+  [data-mf="fade-zoom"]:not(.mf-animate) {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  
+  /* ===================================================================
+     ZOOM ANIMATIONS (Animate.css Inspired)
+  =================================================================== */
+  
+  [data-mf="zoom-in"]:not(.mf-animate) { transform: scale(0.85); }
+  [data-mf="zoom-out"]:not(.mf-animate) { transform: scale(1.2); }
+  
+  [data-mf="zoom-in-up"]:not(.mf-animate) {
+    transform: translateY(40px) scale(0.8);
+  }
+  
+  [data-mf="zoom-in-down"]:not(.mf-animate) {
+    transform: translateY(-40px) scale(0.8);
+  }
+  
+  [data-mf="zoom-in-left"]:not(.mf-animate) {
+    transform: translateX(-40px) scale(0.8);
+  }
+  
+  [data-mf="zoom-in-right"]:not(.mf-animate) {
+    transform: translateX(40px) scale(0.8);
+  }
+  
+  /* ===================================================================
+     SLIDE ANIMATIONS
+  =================================================================== */
+  
+  [data-mf="slide-up"]:not(.mf-animate) { transform: translateY(60px); }
+  [data-mf="slide-down"]:not(.mf-animate) { transform: translateY(-60px); }
+  [data-mf="slide-left"]:not(.mf-animate) { transform: translateX(-80px); }
+  [data-mf="slide-right"]:not(.mf-animate) { transform: translateX(80px); }
+  
+  /* ===================================================================
+     ROTATE / FLIP (Animate.css Inspired)
+  =================================================================== */
+  
+  [data-mf="rotate"]:not(.mf-animate) { transform: rotate(45deg); }
+  
+  [data-mf="rotate-up-left"]:not(.mf-animate) {
+    transform: rotate(-45deg) translateY(40px);
+  }
+  
+  [data-mf="rotate-up-right"]:not(.mf-animate) {
+    transform: rotate(45deg) translateY(40px);
+  }
+  
+  [data-mf="rotate-down-left"]:not(.mf-animate) {
+    transform: rotate(-45deg) translateY(-40px);
+  }
+  
+  [data-mf="rotate-down-right"]:not(.mf-animate) {
+    transform: rotate(45deg) translateY(-40px);
+  }
+  
+  /* Flip */
+  [data-mf="flip-x"]:not(.mf-animate) { transform: rotateX(90deg); }
+  [data-mf="flip-y"]:not(.mf-animate) { transform: rotateY(90deg); }
+  
+  /* ===================================================================
+     BACK MOVEMENTS (BackIn / BackOut styles)
+  =================================================================== */
+  
+  [data-mf="back-in-up"]:not(.mf-animate) {
+    transform: translateY(80px) scale(0.7);
+  }
+  
+  [data-mf="back-in-down"]:not(.mf-animate) {
+    transform: translateY(-80px) scale(0.7);
+  }
+  
+  [data-mf="back-in-left"]:not(.mf-animate) {
+    transform: translateX(-120px) scale(0.7);
+  }
+  
+  [data-mf="back-in-right"]:not(.mf-animate) {
+    transform: translateX(120px) scale(0.7);
+  }
+  
+  /* ===================================================================
+     LIGHTSPEED (Animate.css Inspired)
+  =================================================================== */
+  [data-mf="lightspeed-left"]:not(.mf-animate) {
+    transform: translateX(-120%) skewX(20deg);
+  }
+  
+  [data-mf="lightspeed-right"]:not(.mf-animate) {
+    transform: translateX(120%) skewX(-20deg);
+  }
+  
+  /* ===================================================================
+     ROLL (Animate.css Inspired)
+  =================================================================== */
+  [data-mf="roll-left"]:not(.mf-animate) {
+    transform: translateX(-100px) rotate(-45deg);
+  }
+  
+  [data-mf="roll-right"]:not(.mf-animate) {
+    transform: translateX(100px) rotate(45deg);
+  }
+  
+  /* ===================================================================
+     SPECIAL EFFECTS
+  =================================================================== */
+  
+  /* Blur Reveal */
+  [data-mf="blur-in"]:not(.mf-animate) {
+    opacity: 0;
+    filter: blur(12px);
+  }
+  .mf-animate[data-mf="blur-in"] { filter: blur(0); }
+  
+  /* Jack In The Box */
+  [data-mf="jack"]:not(.mf-animate) {
+    transform: scale(0.5) rotate(-20deg);
+  }
+  
+  /* Hinge (drops from top) */
+  [data-mf="hinge"]:not(.mf-animate) {
+    transform-origin: top left;
+    transform: rotate(70deg);
+    opacity: 0;
+  }
+  
+  /* ===================================================================
+     SCALE ANIMATIONS
+  =================================================================== */
+  
+  [data-mf="scale-in"]:not(.mf-animate) { transform: scale(0.85); }
+  [data-mf="scale-out"]:not(.mf-animate) { transform: scale(1.15); }
+  
+  /* ===================================================================
+     BOUNCE EFFECTS
+  =================================================================== */
+  
+  [data-mf="bounce"]:not(.mf-animate) { transform: translateY(30px); }
+  
+  [data-mf="bounce-left"]:not(.mf-animate) {
+    transform: translateX(-40px);
+  }
+  
+  [data-mf="bounce-right"]:not(.mf-animate) {
+    transform: translateX(40px);
+  }
+  
+  /* ===================================================================
+     STAGGER SUPPORT (CSS only)
+  =================================================================== */
+  .mf-stagger-item {
+    transition-delay: var(--mf-delay, 0ms);
+  }
+  

@@ -1,0 +1,55 @@
+.text-image-01-content .h2 {
+  margin: 0;
+}
+
+.text-image-01-text {
+  max-width: 520px;
+}
+
+.text-image-01-media {
+  border-radius: 24px;
+}
+
+/* ============================================================= */
+/* XXL DEVICES                                                   */
+/* Large desktops / wide monitors / screens below 1400px         */
+/* ============================================================= */
+@media (max-width: 1399.98px) {
+}
+
+/* ============================================================= */
+/* XL DEVICES                                                    */
+/* Standard desktops / laptops / screens below 1200px           */
+/* ============================================================= */
+@media (max-width: 1199.98px) {
+}
+
+/* ============================================================= */
+/* LG DEVICES                                                    */
+/* Tablets / landscape tablets / small laptops below 992px      */
+/* ============================================================= */
+@media (max-width: 991.98px) {
+  .text-image-01-media {
+    margin-bottom: 60px;
+  }
+  .text-image-01-text {
+    max-width: 100%;
+  }
+}
+
+/* ============================================================= */
+/* MD DEVICES                                                    */
+/* Landscape phones / large mobiles / screens below 768px       */
+/* ============================================================= */
+@media (max-width: 767.98px) {
+  .text-image-01-media {
+    margin-bottom: 40px;
+  }
+}
+
+/* ============================================================= */
+/* SM DEVICES                                                    */
+/* Portrait phones / extra small screens below 576px            */
+/* ============================================================= */
+@media (max-width: 575.98px) {
+}

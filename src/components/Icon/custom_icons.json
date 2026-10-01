@@ -1,0 +1,18 @@
+[
+    {
+        "id": "custom_363",
+        "attachmentId": 363,
+        "name": "rabbit",
+        "src": "http:\/\/smp-blocks-sir.local\/wp-content\/uploads\/2026\/04\/rabbit.png",
+        "mimeType": "image\/png",
+        "isCustom": true
+    },
+    {
+        "id": "custom_310",
+        "attachmentId": 310,
+        "name": "samosa",
+        "src": "http:\/\/smp-blocks-sir.local\/wp-content\/uploads\/2026\/04\/samosa.png",
+        "mimeType": "image\/png",
+        "isCustom": true
+    }
+]

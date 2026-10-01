@@ -1,0 +1,138 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "smp-blocks/image-text-1",
+  "version": "1.0.0",
+  "title": "Image & Text 1",
+  "category": "smp-image-text",
+  "icon": "format-image",
+  "description": "A split layout with an image on one side and text with two buttons on the other.",
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "align": [
+      "full"
+    ],
+    "layout": {
+      "allowEditing": false,
+      "default": {
+        "type": "constrained"
+      }
+    }
+  },
+  "attributes": {
+    "selectedPaddingOptions": {
+      "type": "array",
+      "default": []
+    },
+    "bgClass": {
+      "type": "string",
+      "default": ""
+    },
+    "imagePosition": {
+      "type": "string",
+      "default": "right"
+    },
+    "imageId": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "default": null
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": "https://images.pexels.com/photos/6937841/pexels-photo-6937841.jpeg"
+    },
+    "imageAlt": {
+      "type": "string"
+    },
+    "imageSize": {
+      "type": "string",
+      "default": "full"
+    },
+    "imageSizes": {
+      "type": "object",
+      "default": {}
+    },
+    "aspectRatio": {
+      "type": "string",
+      "default": "4x3"
+    },
+    "objectPosition": {
+      "type": "string",
+      "default": "center center"
+    },
+    "lazyLoad": {
+      "type": "boolean",
+      "default": true
+    },
+    "showSubHeading": {
+      "type": "boolean",
+      "default": true
+    },
+    "subHeading": {
+      "type": "string",
+      "default": "Trusted Growth Partner"
+    },
+    "showHeading": {
+      "type": "boolean",
+      "default": true
+    },
+    "headingTag": {
+      "type": "string",
+      "default": "h2"
+    },
+    "heading": {
+      "type": "string",
+      "default": "Build a stronger online presence with strategy that works."
+    },
+    "showDescription": {
+      "type": "boolean",
+      "default": true
+    },
+    "description": {
+      "type": "string",
+      "default": "<p>From modern website design to performance-focused marketing, we help brands attract better leads, improve trust, and grow with confidence.</p>"
+    },
+    "showButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Get Started"
+    },
+    "buttonUrl": {
+      "type": "string"
+    },
+    "buttonTarget": {
+      "type": "string"
+    },
+    "buttonStyle": {
+      "type": "string",
+      "default": "primary"
+    },
+    "showButton2": {
+      "type": "boolean",
+      "default": true
+    },
+    "buttonText2": {
+      "type": "string",
+      "default": "Learn More"
+    },
+    "buttonUrl2": {
+      "type": "string"
+    },
+    "buttonTarget2": {
+      "type": "string"
+    },
+    "buttonStyle2": {
+      "type": "string",
+      "default": "dark-outline"
+    }
+  },
+  "textdomain": "smp-blocks",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

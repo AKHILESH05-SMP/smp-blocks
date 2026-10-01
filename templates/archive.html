@@ -1,0 +1,37 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<main class="wp-block-group container my-5">
+    
+    <!-- Archive Header: Batata hai ki user kaunsi category dekh raha hai -->
+    <header class="archive-header mb-5 py-4 bg-light rounded-3 text-center">
+        <!-- wp:query-title {"type":"archive","level":1} /-->
+        <!-- wp:term-description /-->
+    </header>
+
+    <!-- wp:query {"layout":{"inherit":true}} -->
+    <div class="wp-block-query">
+        <!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+            <!-- Grid Item -->
+            <div class="card h-100 border-0 shadow-sm mb-4">
+                <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9"} /-->
+                <div class="card-body">
+                    <!-- wp:post-title {"isLink":true,"style":{"typography":{"fontSize":"1.5rem"}}} /-->
+                    <!-- wp:post-excerpt {"excerptLength":20} /-->
+                </div>
+            </div>
+        <!-- /wp:post-template -->
+
+        <!-- Pagination -->
+        <div class="mt-4">
+            <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+                <!-- wp:query-pagination-previous /-->
+                <!-- wp:query-pagination-numbers /-->
+                <!-- wp:query-pagination-next /-->
+            <!-- /wp:query-pagination -->
+        </div>
+    </div>
+    <!-- /wp:query -->
+
+</main>
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

@@ -1,0 +1,49 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<main class="wp-block-group">
+
+    <!-- Section 1 & 2 Blocks (As Patterns) -->
+    <!-- wp:pattern {"slug":"my-theme/image-text-right"} /-->
+    <!-- wp:pattern {"slug":"my-theme/image-text-left"} /-->
+
+    <!-- Main Blog Feed Container -->
+    <div class="container my-5">
+        <h2 class="mb-4 display-6 fw-bold">Latest Articles</h2>
+        
+        <!-- wp:query {"layout":{"inherit":true}} -->
+        <div class="wp-block-query">
+            
+            <!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+            <!-- Bootstrap Card Grid (3 Columns) -->
+            <div class="card h-100 border-0 shadow-sm mb-4">
+                
+                <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"16/9","className":"card-img-top"} /-->
+                
+                <div class="card-body">
+                    <div class="text-muted small mb-2">
+                        <!-- wp:post-date /-->
+                    </div>
+                    
+                    <!-- wp:post-title {"isLink":true,"tagName":"h3","style":{"typography":{"fontSize":"1.5rem"}},"className":"card-title fw-semibold"} /-->
+                    
+                    <!-- wp:post-excerpt {"excerptLength":20,"className":"card-text text-secondary mt-2"} /-->
+                </div>
+            </div>
+            <!-- /wp:post-template -->
+
+            <!-- Pagination -->
+            <div class="d-flex justify-content-center mt-5">
+                <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+                    <!-- wp:query-pagination-previous {"className":"btn btn-outline-primary me-2"} /-->
+                    <!-- wp:query-pagination-numbers /-->
+                    <!-- wp:query-pagination-next {"className":"btn btn-outline-primary ms-2"} /-->
+                <!-- /wp:query-pagination -->
+            </div>
+
+        </div>
+        <!-- /wp:query -->
+    </div>
+
+</main>
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
